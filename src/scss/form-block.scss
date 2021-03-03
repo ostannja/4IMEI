@@ -1,0 +1,153 @@
+.form-block {
+  @include flex(space-between, flex-start, row, nowrap);
+  margin-bottom: 61px;
+
+  .img-block {
+    @include flex(center, center, column, nowrap);
+    padding-top: 52px;
+    width: 51.8%;
+
+    .header-img {
+      margin-bottom: -31px;
+    }
+
+    .text {
+      margin-right: 19px;
+      @include flex(center, flex-end, row, nowrap);
+      font-family: "SFProDisplay";
+      font-weight: 600;
+      font-size: 20px;
+
+      span {
+        // @include flex(flex-start, flex-start, row, nowrap);
+        font-family: "SFProDisplay";
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 114%;
+        padding-left: 16px;
+        padding-right: 8px;
+        color: #0071e3;
+      }
+    }
+  }
+
+  .text-block {
+    width: 39.2%;
+    height: 100%;
+    padding-top: 11%;
+    @include flex(space-between, flex-start, column, nowrap);
+  }
+
+  .title {
+    width: 80%;
+    margin-bottom: 16px;
+    font-family: "SFProDisplay";
+    font-size: calc(34px + (27 + 11 * 0.7) * ((100vw - 768px) / 1440));
+    font-weight: 600;
+    line-height: 1.2;
+    color: #000000;
+  }
+
+  .subtitle {
+    width: 85%;
+    margin-bottom: 12.5%;
+    font-family: "SFProDisplay";
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #000000;
+  }
+
+  .form {
+    @include flex(space-between, flex-start, row, nowrap);
+    margin-bottom: 13.1%;
+  }
+
+  input {
+    border-radius: 12px;
+    padding-left: 20px;
+
+    &::placeholder {
+      font-family: "SFProDisplay";
+      font-size: 16px;
+      font-weight: normal;
+      color: #ababab;
+    }
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input.u-full-width {
+    margin-right: 10px;
+    padding: 0;
+    padding-left: 22px;
+  }
+
+  .u-full-width {
+    max-width: 250px;
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    border: solid 1px #c4c4c4;
+  }
+
+  input.button-submit {
+    width: 233px;
+    height: 50px;
+    @include flex(center, center, row, nowrap);
+    padding: 0;
+    border-radius: 12px;
+    background-color: #0071e3;
+    font-family: "SFProDisplay";
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0;
+    color: #ffffff;
+    border: none;
+  }
+
+  .link {
+    font-family: "SFProDisplay";
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #0071e3;
+    // text-decoration: underline;
+  }
+
+  hr {
+    margin: 0;
+    border-color: #0071e3;
+    background-color: #0071e3;
+    width: 203px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-block {
+    .img-block {
+      .text {
+        font-size: 16px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .form {
+      flex-direction: column;
+    }
+
+    .u-full-width {
+      height: 42px;
+      margin-bottom: 15px;
+    }
+
+    input.button-submit {
+      height: 42px;
+    }
+  }
+}

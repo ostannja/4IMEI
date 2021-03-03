@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  @include flex(flex-start, center, row, nowrap);
+  height: 55px;
+
+  .logo-wrapper {
+    margin-right: 21%;
+  }
+
+  .menu {
+    @include flex(flex-start, center, row, nowrap);
+    width: 100%;
+    .item {
+      // margin-left: 0;
+      margin-right: 9.3%;
+      .text {
+        font-family: "SFProDisplay";
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+        color: #000000;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.security-block {
+  background-color: #4197b6;
+  padding-top: 106px;
+  padding-bottom: 218px;
+
+  .title {
+    margin-bottom: 78px;
+    font-family: "SFProDisplay";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+
+  .flex-wrapper {
+    @include flex(space-between, flex-start, row, nowrap);
+
+    .block-item {
+      width: 27%;
+
+      .icon {
+        margin-bottom: 42px;
+      }
+
+      .number-text {
+        font-family: "SFProDisplay";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.45;
+        color: #ffffff;
+        margin-bottom: 26px;
+
+        span {
+          font-size: 50px;
+          line-height: 1;
+          padding-left: 5px;
+          margin-right: 9px;
+        }
+      }
+
+      .text {
+        width: 87%;
+        font-family: SFProDisplay;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.4;
+        color: #ffffff;
+      }
+    }
+  }
+}
