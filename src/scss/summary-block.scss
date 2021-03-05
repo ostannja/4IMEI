@@ -1,6 +1,6 @@
 .summary-block {
-  padding-top: 144px;
-  padding-bottom: 109px;
+  padding-top: 10%;
+  padding-bottom: 7.6%;
   background-color: #cee2f8;
 
   .wrapper {
@@ -9,7 +9,7 @@
 
   .title {
     font-family: "SFProDisplay";
-    font-size: 40px;
+    font-size: calc(25px + (15 + 15 * 0.68) * ((100vw - 576px) / 1440));
     font-weight: 600;
     line-height: 1.3;
     color: #0071e3;
@@ -25,5 +25,33 @@
     color: #000000;
     text-align: center;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .summary-block {
+    form {
+      flex-direction: column;
+      .u-full-width {
+        height: 42px;
+        width: 315px;
+        max-width: none;
+        margin-bottom: 15px;
+      }
+
+      .button-submit {
+        height: 42px;
+        width: 315px;
+        background-color: #000000;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .summary-block {
+    form {
+      display: none;
+    }
   }
 }

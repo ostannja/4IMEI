@@ -5,33 +5,23 @@
     padding-top: 8.3%;
     margin-bottom: 7.5%;
     font-family: "SFProDisplay";
-    font-size: 40px;
+    font-size: calc(25px + (15 + 15 * 0.68) * ((100vw - 576px) / 1440));
     font-weight: 600;
     line-height: 1.5;
     color: #000000;
   }
-}
 
-.grid-block {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    "grid-item-1 grid-item-2 grid-item-3"
-    "grid-item-4 grid-item-5 grid-item-6";
+  .first-row {
+    margin-bottom: 6.4%;
+  }
 
   .item-text {
-    width: 84%;
+    width: 85%;
     padding-top: 22px;
     font-family: "SFProDisplay";
     font-size: 16px;
     font-weight: normal;
     line-height: 1.4;
     color: #000000;
-  }
-
-  .grid-item-4,
-  .grid-item-5,
-  .grid-item-6 {
-    padding-top: 41px;
   }
 }

@@ -78,3 +78,28 @@ header {
     }
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    height: fit-content;
+  }
+  .navbar {
+    .navbar-wrapper {
+      .navbar-menu {
+        width: 55%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 94px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(237, 246, 255, 0.5);
+    .navbar-wrapper {
+      display: none;
+    }
+  }
+}

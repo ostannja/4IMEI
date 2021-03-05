@@ -23,3 +23,27 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    .logo-wrapper {
+      margin-right: 7%;
+    }
+
+    .menu {
+      .item {
+        .text {
+          font-size: 14.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    .menu {
+      display: none;
+    }
+  }
+}
