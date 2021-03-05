@@ -46,6 +46,43 @@
   }
 }
 
+@media (max-width: 576px) {
+  .form-block-gadget {
+    .form-block {
+      flex-direction: column-reverse;
+      margin-bottom: 24.2%;
+      .text-block {
+        width: 100%;
+        padding-top: 16.2%;
+        .title {
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 1.3;
+          margin-bottom: 23px;
+        }
+        .subtitle {
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 1.5;
+          margin-right: 24px;
+          margin-bottom: 0;
+          span {
+            color: #0071e3;
+            margin-left: 4px;
+          }
+        }
+        .form {
+          display: none;
+        }
+      }
+
+      .img-block {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
 .form-block-quickly {
   .form-block {
     flex-direction: row-reverse;
@@ -108,6 +145,14 @@
       .text-block {
         width: 33%;
       }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form-block-quickly {
+    .form-block {
+      flex-direction: column-reverse;
     }
   }
 }
