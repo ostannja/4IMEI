@@ -16,6 +16,7 @@
     }
 
     .subtitle {
+      font-size: calc(16px + (2 + 2 * 0.68) * ((100vw - 576px) / 1440));
       margin-bottom: 10%;
 
       span {
@@ -77,6 +78,7 @@
       }
 
       .img-block {
+        width: 100%;
         padding-top: 20px;
       }
     }
@@ -85,8 +87,6 @@
 
 .form-block-quickly {
   .form-block {
-    flex-direction: row-reverse;
-    padding-top: 7%;
     margin-bottom: 8.7%;
 
     .text-block {
@@ -99,38 +99,15 @@
     }
 
     .title {
-      font-size: calc(25px + (15 + 15 * 0.68) * ((100vw - 576px) / 1440));
-      line-height: 1.3;
       margin-bottom: 31px;
     }
 
     .subtitle {
-      font-size: calc(16px + (2 + 2 * 0.68) * ((100vw - 576px) / 1440));
-      margin-bottom: 10%;
       line-height: 1.5;
     }
 
     .img-block {
       padding-top: 13px;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .form-block-quickly {
-    .form-block {
-      .form {
-        flex-direction: column;
-      }
-
-      .u-full-width {
-        height: 42px;
-        margin-bottom: 15px;
-      }
-
-      input.button-submit {
-        height: 42px;
-      }
     }
   }
 }
@@ -152,14 +129,29 @@
 @media (max-width: 576px) {
   .form-block-quickly {
     .form-block {
-      flex-direction: column-reverse;
+      margin-bottom: 23.8%;
+      .text-block {
+        padding-top: 21.1%;
+        .title {
+          width: 50%;
+          margin-bottom: 26px;
+        }
+        .subtitle {
+          font-size: 16px;
+          margin-right: 0;
+          width: 90%;
+        }
+      }
+
+      .img-block {
+        padding-top: 21%;
+      }
     }
   }
 }
 
 .form-block-buy {
   .form-block {
-    flex-direction: row-reverse;
     padding-top: 16%;
     margin-bottom: 7.8%;
 
@@ -169,13 +161,10 @@
     }
 
     .title {
-      font-size: calc(25px + (15 + 15 * 0.68) * ((100vw - 576px) / 1440));
-      line-height: 1.3;
       margin-bottom: 39px;
     }
 
     .subtitle {
-      font-size: calc(16px + (2 + 2 * 0.68) * ((100vw - 576px) / 1440));
       margin-bottom: 10.1%;
       line-height: 1.5;
     }
@@ -212,6 +201,29 @@
       .text-block {
         padding-top: 0;
         width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form-block-buy {
+    .form-block {
+      padding-top: 12.5%;
+      margin-bottom: 14%;
+      .text-block {
+        .title {
+          margin-bottom: 11.2%;
+        }
+        .subtitle {
+          margin-right: 0;
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+      .img-block {
+        padding-top: 0;
+        margin-top: -5px;
       }
     }
   }
