@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   @include flex(flex-start, center, row, nowrap);
-  height: 55px;
+  height: 60px;
 
   .logo-wrapper {
     margin-right: 21%;
@@ -40,9 +40,22 @@
 }
 
 @media (max-width: 576px) {
-  .footer {
-    .menu {
-      display: none;
+  footer {
+    @include flex(center, center, row, wrap);
+    width: 100%;
+    .footer {
+      width: 85%;
+      @include flex(flex-start, center, row, wrap);
+      .logo-wrapper {
+        .logo {
+          font-size: 25px;
+          margin-left: 0;
+          letter-spacing: -1.5px;
+        }
+      }
+      .menu {
+        display: none;
+      }
     }
   }
 }
