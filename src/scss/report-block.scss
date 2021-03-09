@@ -1,4 +1,5 @@
 .report-block {
+  position: relative;
   background-color: #f3e279;
   .form-block {
     padding-top: 5.5%;
@@ -26,6 +27,15 @@
       @include flex(center, center, column, nowrap);
       padding-top: 0;
       width: 37%;
+
+      .icon_zoom_in {
+        cursor: pointer;
+        position: absolute;
+        top: 47.5%;
+        left: 42.5%;
+        width: 60px;
+        height: 58px;
+      }
     }
   }
 }

@@ -3,6 +3,7 @@
   margin-bottom: 9.5%;
 
   .img-block {
+    position: relative;
     @include flex(center, center, column, nowrap);
     padding-top: 52px;
     width: 51.8%;

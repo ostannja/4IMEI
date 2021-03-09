@@ -763,6 +763,7 @@ img {
 }
 
 .form-block .img-block {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,6 +1140,7 @@ img {
 }
 
 .report-block {
+  position: relative;
   background-color: #f3e279;
 }
 
@@ -1183,6 +1185,15 @@ img {
       flex-wrap: nowrap;
   padding-top: 0;
   width: 37%;
+}
+
+.report-block .form-block .img-block .icon_zoom_in {
+  cursor: pointer;
+  position: absolute;
+  top: 47.5%;
+  left: 42.5%;
+  width: 60px;
+  height: 58px;
 }
 
 .security-block {
@@ -1358,6 +1369,300 @@ img {
   font-weight: 300;
   letter-spacing: 0.8px;
   color: #000000;
+}
+
+.zoom_bg {
+  position: absolute;
+  background: rgba(141, 141, 141, 0.411);
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0;
+  left: 0;
+}
+
+.zoom_bg .modal_content {
+  background-color: #ffffff;
+  position: relative;
+  width: 41.4%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-top: 2.8%;
+  z-index: 10;
+}
+
+.zoom_bg .modal_content .panel {
+  background-color: #333333;
+  height: 30px;
+  width: 100%;
+}
+
+.zoom_bg .modal_content .panel--footer {
+  margin-top: 58px;
+}
+
+.zoom_bg .modal_content .panel--footer .title {
+  font-size: 20px !important;
+}
+
+.zoom_bg .modal_content .panel .title {
+  font-family: "SFProDisplay";
+  font-size: 18px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0.36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #ffffff;
+  height: inherit;
+  width: inherit;
+}
+
+.zoom_bg .modal_content .iphone_block {
+  width: 61.7%;
+  padding-top: 38px;
+  margin-bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.zoom_bg .modal_content .iphone_block .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 65px;
+  height: 77px;
+}
+
+.zoom_bg .modal_content .iphone_block .text_wrapper .text {
+  font-family: "SFProDisplay";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  color: #000000;
+}
+
+.zoom_bg .modal_content .table_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 37.5%;
+  margin-bottom: 19px;
+}
+
+.zoom_bg .modal_content .table_title img {
+  max-width: none;
+}
+
+.zoom_bg .modal_content .table_title .title {
+  text-align: center;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #000000;
+  width: 82%;
+}
+
+.zoom_bg .modal_content .table_title--servise {
+  width: 46% !important;
+  margin-top: 7.3%;
+  margin-bottom: 22px;
+}
+
+.zoom_bg .modal_content .table_title--guarantee {
+  width: 43% !important;
+  margin-top: 7.3%;
+  margin-bottom: 19px;
+}
+
+.zoom_bg .modal_content .table_title--stolen {
+  width: 41% !important;
+  margin-top: 7.3%;
+  margin-bottom: 36px;
+}
+
+.zoom_bg .modal_content .table_wrapper {
+  padding-left: 4.5%;
+  padding-right: 6.3%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.zoom_bg .modal_content .table_wrapper .table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.zoom_bg .modal_content .table_wrapper .table tr:nth-of-type(odd) {
+  background-color: #edf6ff;
+  border: none;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td {
+  border-bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td.bold {
+  font-weight: 500 !important;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td.black {
+  color: #000000 !important;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td.red {
+  color: #dd2323 !important;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td.uppercase {
+  text-transform: uppercase !important;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td.activation {
+  line-height: 0.9 !important;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-right: 20px;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td:nth-of-type(odd) {
+  font-family: "SFProDisplay";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #777474;
+  padding-left: 3.5%;
+}
+
+.zoom_bg .modal_content .table_wrapper .table td:nth-of-type(even) {
+  width: 29%;
+  font-family: "SFProDisplay";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.zoom_bg .close {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-size: 42px;
+  color: #333;
+  cursor: pointer;
+}
+
+.zoom_bg .close:hover {
+  color: #666;
 }
 
 @media (min-width: 320px) {
