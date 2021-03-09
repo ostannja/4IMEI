@@ -12,7 +12,7 @@
   .modal_content {
     background-color: #ffffff;
     position: relative;
-    width: 41.4%;
+    width: 595px;
     object-fit: contain;
     @include flex(center, center, column, nowrap);
     margin-top: 2.8%;
@@ -24,7 +24,7 @@
       width: 100%;
 
       &--footer {
-        margin-top: 58px;
+        margin-top: 59px;
 
         .title {
           font-size: 20px !important;
@@ -45,16 +45,19 @@
         width: inherit;
       }
     }
+
     .iphone_block {
       width: 61.7%;
       padding-top: 38px;
       margin-bottom: 46px;
       @include flex(space-between, center, row, nowrap);
+
       .img {
         @include flex(center, center, row, nowrap);
         width: 65px;
         height: 77px;
       }
+
       .text_wrapper {
         .text {
           font-family: "SFProDisplay";
@@ -110,69 +113,13 @@
       padding-right: 6.3%;
       width: 100%;
       @include flex(center, center, column, nowrap);
-
-      .table {
-        border-collapse: collapse;
-        width: 100%;
-
-        & tr:nth-of-type(odd) {
-          background-color: #edf6ff;
-          border: none;
-        }
-        td {
-          border-bottom: 0;
-          padding-top: 6px;
-          padding-bottom: 6px;
-
-          &.bold {
-            font-weight: 500 !important;
-          }
-
-          &.black {
-            color: #000000 !important;
-          }
-
-          &.red {
-            color: #dd2323 !important;
-          }
-
-          &.uppercase {
-            text-transform: uppercase !important;
-          }
-
-          &.activation {
-            // height: 26px !important;
-            line-height: 0.9 !important;
-            padding-bottom: 0;
-            padding-top: 0;
-            padding-right: 20px;
-          }
-        }
-        & td:nth-of-type(odd) {
-          font-family: "SFProDisplay";
-          font-size: 12px;
-          font-weight: 300;
-          line-height: 1.5;
-          color: #777474;
-          padding-left: 3.5%;
-        }
-        & td:nth-of-type(even) {
-          width: 29%;
-          font-family: "SFProDisplay";
-          font-size: 12px;
-          font-weight: 300;
-          line-height: 1.5;
-          color: #000000;
-        }
-      }
     }
   }
 
   .close {
     position: absolute;
-    top: 50%;
-    right: 50%;
-    // @include flex(flex-start, center, row, nowrap);
+    top: 49.2%;
+    left: 45%;
     width: 60px;
     height: 60px;
     z-index: 20;
@@ -181,8 +128,69 @@
     font-size: 42px;
     color: #333;
     cursor: pointer;
+
     &:hover {
       color: #666;
     }
+  }
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+
+  & tr:nth-of-type(odd) {
+    background-color: #edf6ff;
+    border: none;
+  }
+
+  td {
+    border-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 30px;
+    font-family: "SFProDisplay";
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+
+    &.bold {
+      font-weight: 500 !important;
+    }
+
+    &.black {
+      color: #000000 !important;
+    }
+
+    &.red {
+      color: #dd2323 !important;
+    }
+
+    &.uppercase {
+      text-transform: uppercase !important;
+    }
+
+    &.activation {
+      // height: 26px !important;
+      line-height: 0.9 !important;
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-right: 20px;
+    }
+
+    &.slash {
+      font-size: 14px !important;
+      font-weight: 600 !important;
+    }
+  }
+
+  & td:nth-of-type(odd) {
+    color: #777474;
+    padding-left: 3.5%;
+  }
+
+  & td:nth-of-type(even) {
+    width: 29%;
+    color: #000000;
   }
 }

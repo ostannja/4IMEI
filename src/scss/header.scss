@@ -1,6 +1,6 @@
-header {
-  // height: 100vh;
-}
+// header {
+//   // height: 100vh;
+// }
 
 .logo {
   margin-left: 14px;
@@ -14,31 +14,15 @@ header {
 .navbar {
   @include flex(space-between, center, row, nowrap);
   height: 72px;
+  width: 100%;
 
-  .navbar-wrapper {
-    @include flex(flex-end, center, row, nowrap);
+  .navbar_wrapper {
+    @include flex(space-between, center, row, nowrap);
+    width: 80.8%;
 
     .navbar-menu {
       @include flex(space-between, center, row, nowrap);
-      width: 30.5%;
-      margin-right: 11.3%;
-
-      .text {
-        font-family: SFProDisplay;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.6;
-        color: #000000;
-      }
-    }
-
-    .navbar-localization {
-      @include flex(space-between, center, row, nowrap);
-      margin-right: 5.2%;
-
-      .item {
-        margin-left: 16px;
-      }
+      width: 37.8%;
 
       .text {
         font-family: SFProDisplay;
@@ -49,6 +33,24 @@ header {
       }
     }
   }
+
+  .navbar-localization {
+    @include flex(space-between, center, row, nowrap);
+    margin-right: 0.3%;
+
+    .item {
+      margin-left: 16px;
+    }
+
+    .text {
+      font-family: SFProDisplay;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #000000;
+    }
+  }
+  // }
 }
 
 .header-page {

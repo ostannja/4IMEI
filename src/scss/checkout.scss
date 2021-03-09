@@ -1,0 +1,143 @@
+.payment_chain {
+  padding-top: 38px;
+  @include flex(center, center, row, wrap);
+  width: 76%;
+  margin: 0 auto;
+  margin-bottom: 8.4%;
+  .images_chain {
+    width: 770px;
+    @include flex(space-between, center, row, wrap);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    & .stage_wrapper:nth-of-type(2),
+    .stage_wrapper:last-of-type {
+      border: solid 1px #9e9e9e;
+    }
+
+    .stage_wrapper {
+      @include flex(center, center, row, wrap);
+      width: 50px;
+      height: 50px;
+      border: 2px solid #0071e3;
+      border-radius: 15px;
+    }
+
+    & .divider:last-of-type {
+      border-bottom: 1px solid #9e9e9e;
+    }
+
+    .divider {
+      flex-grow: 1;
+      border-bottom: 1px solid #0071e3;
+    }
+  }
+  .text_chain {
+    @include flex(space-between, center, row, wrap);
+    width: 770px;
+    padding-top: 5px;
+
+    p {
+      font-family: "SFProDisplay";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #000000;
+    }
+
+    & :nth-child(2) {
+      margin-right: 21px;
+      font-weight: normal;
+    }
+
+    & :last-child {
+      margin-right: 25px;
+      font-weight: normal;
+      color: #9e9e9e;
+    }
+  }
+}
+
+.brief_report {
+  @include flex(flex-start, flex-start, row, nowrap);
+  padding-left: 16px;
+  margin-bottom: 72px;
+  .img_block {
+    @include flex(flex-start, flex-start, column, nowrap);
+    width: 23%;
+    margin-right: 3.6%;
+    .text {
+      font-family: "SFProDisplay";
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 1.45;
+      color: #0071e3;
+      padding-top: 30px;
+    }
+  }
+
+  .table {
+    width: 36%;
+    margin-right: 8.4%;
+
+    tr {
+      height: 50px;
+    }
+
+    td {
+      padding-left: 5%;
+      font-size: 16px;
+    }
+
+    & td:nth-of-type(even) {
+      width: 49%;
+    }
+  }
+}
+
+.payment_block {
+  @include flex(center, center, column, wrap);
+  border-radius: 12px;
+  border: solid 1px #0071e3;
+  width: 28.7%;
+  padding-top: 44px;
+  padding-bottom: 42px;
+
+  .title {
+    margin-bottom: 4px;
+  }
+  .text {
+    font-family: "SFProDisplay";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000000;
+  }
+
+  .price_wrapper {
+    margin-bottom: 30px;
+  }
+
+  .price {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #0071e3;
+  }
+
+  .button {
+    width: 175px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #0071e3;
+    border: none;
+    margin-bottom: 20px;
+
+    .text {
+      font-family: "SFProDisplay";
+      font-size: 16px;
+      font-weight: normal;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+}

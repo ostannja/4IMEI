@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  @include flex(flex-start, center, row, nowrap);
+  @include flex(center, center, row, nowrap);
   height: 60px;
 
   .logo-wrapper {
@@ -8,8 +8,8 @@
   }
 
   .menu {
-    @include flex(flex-start, center, row, nowrap);
-    width: 100%;
+    @include flex(space-between, center, row, nowrap);
+    width: 46%;
     .item {
       margin-right: 9.3%;
       .text {

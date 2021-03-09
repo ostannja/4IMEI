@@ -10,24 +10,25 @@
 </head>
 
 <body>
-  <!-- @@include('test.html') -->
   <header>
-    <div class="navbar">
-      <a href="#">
-        <p class="logo">4imei</p>
-      </a>
-      <nav class="container navbar-wrapper">
-        <ul class="navbar-menu">
-          <li class="item">
-            <a class="text" href="#projects">Ризики</a>
-          </li>
-          <li class="item">
-            <a class="text" href="#how_works">Приклад звіту</a>
-          </li>
-          <li class="item">
-            <a class="text" href="#how_works">Про нас</a>
-          </li>
-        </ul>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar_wrapper">
+          <a href="#">
+            <p class="logo">4imei</p>
+          </a>
+          <ul class="navbar-menu">
+              <li class="item">
+                <a class="text" href="#projects">Ризики</a>
+              </li>
+              <li class="item">
+                <a class="text" href="#how_works">Приклад звіту</a>
+              </li>
+              <li class="item">
+                <a class="text" href="#how_works">Про нас</a>
+              </li>
+          </ul>
+        </div>
         <ul class="navbar-localization">
           <li class="item">
             <a class="text" href="#">Укр</a>
@@ -51,18 +52,22 @@
             </div>
           </div>
           <div class="text-block">
-            <p class="title">Перевірка техніки Apple</p>
+            <a href="payment.html">
+              <p class="title">Перевірка техніки Apple</p>
+            </a>
             <p class="subtitle">Захистіть себе перед купівлею від крадених чи заблокованих гаджетів</p>
             <div class="caption">
               <p class="text">Детальний звіт за</p>
               <p class="text"><span class="price">99 грн</span></p>
             </div>
+            
             <form class="form">
               <input class="u-full-width" type="number" placeholder="IMEI або Serial Number " id="exampleEmailInput">
               <input class="button-submit" type="submit" value="ПЕРЕВІРИТИ">
+              
             </form>
             <div class="link">
-              <a class="link" href="#">Де шукати IMEI або Serial number</a>
+              <a class="link" href="test.html">Де шукати IMEI або Serial number</a>
               <hr>
             </div>
           </div>
@@ -73,7 +78,7 @@
     <a class="scroll" href="#">
       <img class="vector" src="img/Icons/Vector.svg" alt="scroll">
     </a>
-
+  
   </header>
   
   <main>
@@ -359,16 +364,16 @@
               <td class="activation">Політика активації AT&T США</td>
             </tr>
           </table>
-
         </div>
 
         <div class="panel panel--footer">
           <p class="title">4IMEI.com</p>
         </div>
 
+        <img class="close icon_zoom_out" src="img/Icons/Icon_zoom_out.svg" alt="Icon_zoom_out">
       </div>
         
-        <img class="close icon_zoom_out" src="img/Icons/Icon_zoom_out.svg" alt="Icon_zoom_out">
+        
       </div>
       
     </div>
@@ -457,9 +462,6 @@
   </main>
   <footer >
     <div class="footer">
-      <a class="logo-wrapper" href="#">
-        <p class="logo">4imei</p>
-      </a>
       <ul class="menu">
         <li class="item">
           <a class="text" href="#">Про нас</a>
