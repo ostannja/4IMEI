@@ -1,5 +1,5 @@
 // header {
-//   // height: 100vh;
+//   height: 100vh;
 // }
 
 .logo {
@@ -73,7 +73,7 @@
 
 @media (max-width: 992px) {
   .navbar {
-    .navbar-wrapper {
+    .navbar_wrapper {
       .navbar-menu {
         width: 45%;
       }
@@ -86,7 +86,7 @@
     height: fit-content;
   }
   .navbar {
-    .navbar-wrapper {
+    .navbar_wrapper {
       .navbar-menu {
         width: 55%;
       }
@@ -100,7 +100,12 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     background-color: rgba(237, 246, 255, 0.5);
-    .navbar-wrapper {
+    .navbar_wrapper {
+      .navbar-menu {
+        display: none;
+      }
+    }
+    .navbar-localization {
       display: none;
     }
   }

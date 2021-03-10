@@ -9,7 +9,7 @@
 
   .menu {
     @include flex(space-between, center, row, nowrap);
-    width: 46%;
+    width: 38%;
     .item {
       margin-right: 9.3%;
       .text {
@@ -25,11 +25,14 @@
 
 @media (max-width: 768px) {
   .footer {
+    @include flex(center, center, row, wrap);
+    width: 100%;
     .logo-wrapper {
       margin-right: 7%;
     }
 
     .menu {
+      width: 85%;
       .item {
         .text {
           font-size: 14.5px;
@@ -41,8 +44,8 @@
 
 @media (max-width: 576px) {
   footer {
-    @include flex(center, center, row, wrap);
     width: 100%;
+    display: none;
     .footer {
       width: 85%;
       @include flex(flex-start, center, row, wrap);
@@ -54,7 +57,7 @@
         }
       }
       .menu {
-        display: none;
+        // display: none;
       }
     }
   }

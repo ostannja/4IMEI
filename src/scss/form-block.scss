@@ -20,7 +20,6 @@
       @include flex(center, flex-end, row, nowrap);
       font-family: "SFProDisplay";
       font-weight: 600;
-      font-size: 20px;
       font-size: calc(16px + (4 + 4 * 0.68) * ((100vw - 576px) / 1440));
 
       .inner-text {
