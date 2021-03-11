@@ -1,5 +1,5 @@
 document.getElementById("zoom").addEventListener("click", function () {
-  document.querySelector(".zoom_bg").style.display = "flex";
+  document.querySelector(".zoom_bg").style.display = "block";
 });
 document.querySelector(".close").addEventListener("click", function () {
   document.querySelector(".zoom_bg").style.display = "none";
