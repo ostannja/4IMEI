@@ -1662,7 +1662,6 @@ img {
 }
 
 .icon_hover {
-  position: relative;
   margin-left: 10px;
 }
 
@@ -1682,7 +1681,7 @@ img {
   text-align: left;
   color: #000000;
   padding: 25px 19px 26px 18px;
-  width: 320px !important;
+  width: 320px;
   top: 0;
   left: 0;
   z-index: 200;
@@ -1694,7 +1693,7 @@ img {
 }
 
 .info_block_down {
-  width: 365px !important;
+  width: 365px;
 }
 
 .info_block .close_popup {
@@ -2354,6 +2353,10 @@ img {
     display: none;
   }
 
+  .mobile_right {
+    display: none;
+  }
+
   .icon_hover:hover .info_block {
     display: block;
     -webkit-transition: all 3s ease-in;
@@ -2719,27 +2722,31 @@ img {
   .footer .menu .item .text {
     font-size: 14.5px;
   }
+
+  .report_content .aside_panel {
+    display: none;
+  }
+
+  .report_content .modal_content {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 577px) {
   .info_block {
-    max-width: 200px;
-    top: 0;
-    right: -20px !important;
-  }
-
-  .mobile_right {
+    top: 43px;
+    left: 0;
     right: 0;
-    left: unset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
 @media (max-width: 576px) {
   .navbar {
     height: 94px;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(237, 246, 255, 0.5);
   }
 
   .navbar .navbar_wrapper .navbar-menu {
@@ -3069,10 +3076,6 @@ img {
     display: none;
   }
 
-  .report_content .aside_panel {
-    display: none;
-  }
-
   .report_content .modal_content {
     width: 100%;
     padding-top: 61px;
@@ -3102,12 +3105,20 @@ img {
     padding-left: 3%;
   }
 
+  .report_content .modal_content .table_block .table td:nth-of-type(odd) {
+    position: relative;
+  }
+
   .report_content .modal_content .table_block .table--wider td {
     height: 54px;
   }
 
   .report_content .modal_content .table_block .table--second td:nth-of-type(even) {
     width: 23.2%;
+  }
+
+  .report_content .modal_content .table_block .table--second td:nth-of-type(odd) {
+    padding-left: 10%;
   }
 
   .report_content .modal_content .table_block .table_title {

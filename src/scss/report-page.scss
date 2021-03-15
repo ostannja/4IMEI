@@ -217,10 +217,6 @@
 
 @media (max-width: 576px) {
   .report_content {
-    .aside_panel {
-      display: none;
-    }
-
     .modal_content {
       width: 100%;
       padding-top: 61px;
@@ -245,6 +241,10 @@
             padding-left: 3%;
           }
 
+          & td:nth-of-type(odd) {
+            position: relative;
+          }
+
           &--wider {
             td {
               height: 54px;
@@ -254,6 +254,10 @@
           &--second {
             & td:nth-of-type(even) {
               width: 23.2%;
+            }
+
+            & td:nth-of-type(odd) {
+              padding-left: 10%;
             }
           }
         }
@@ -346,6 +350,18 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .report_content {
+    .aside_panel {
+      display: none;
+    }
+    .modal_content {
+      width: 100%;
+      margin: 0;
     }
   }
 }

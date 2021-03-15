@@ -190,7 +190,7 @@
 }
 
 .icon_hover {
-  position: relative;
+  // position: relative;
   margin-left: 10px;
 
   .info_icon {
@@ -212,7 +212,7 @@
   text-align: left;
   color: #000000;
   padding: 25px 19px 26px 18px;
-  width: 320px !important;
+  width: 320px;
   top: 0;
   left: 0;
   z-index: 200;
@@ -223,7 +223,7 @@
   }
 
   &_down {
-    width: 365px !important;
+    width: 365px;
   }
 
   .close_popup {
@@ -237,14 +237,12 @@
 
 @media (max-width: 577px) {
   .info_block {
-    max-width: 200px;
-    top: 0;
-    right: -20px !important;
-  }
-
-  .mobile_right {
+    top: 43px;
+    left: 0;
     right: 0;
-    left: unset;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -253,6 +251,10 @@
     .close_popup {
       display: none;
     }
+  }
+
+  .mobile_right {
+    display: none;
   }
 
   .icon_hover:hover .info_block {
