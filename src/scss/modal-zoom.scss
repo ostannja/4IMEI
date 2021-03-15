@@ -7,6 +7,7 @@
   top: 0;
   left: 0;
   display: none;
+  cursor: pointer;
 }
 
 .close {
@@ -16,17 +17,17 @@
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
+  cursor: pointer;
 }
 
 .modal_content {
   background-color: #ffffff;
   margin: 0 auto;
-  // position: relative;
   width: 595px;
   object-fit: contain;
   @include flex(center, center, column, nowrap);
   margin-top: 2.8%;
-  // z-index: 10;
+  overflow-y: auto;
 
   .panel {
     background-color: #333333;
@@ -179,7 +180,7 @@
     color: #777474;
     padding-left: 3.5%;
     display: flex;
-    @include flex(flex-start, flex-start, row, nowrap);
+    @include flex(flex-start, center, row, nowrap);
   }
 
   & td:nth-of-type(even) {
@@ -191,18 +192,71 @@
 .icon_hover {
   position: relative;
   margin-left: 10px;
-  .info_block {
-    position: absolute;
-    display: none;
-    top: 0;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    border: 1px solid red;
+
+  .info_icon {
+    img {
+      max-width: unset;
+    }
   }
 }
 
-.icon_hover:hover .info_block {
-  display: block;
-  transition: all 13s ease-out;
+.info_block {
+  background: #fcf6f0;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  font-family: "SFProDisplay";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
+  color: #000000;
+  padding: 25px 19px 26px 18px;
+  width: 320px !important;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  &_left {
+    right: 0;
+    left: unset;
+  }
+
+  &_down {
+    width: 365px !important;
+  }
+
+  .close_popup {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media (max-width: 577px) {
+  .info_block {
+    max-width: 200px;
+    top: 0;
+    right: -20px !important;
+  }
+
+  .mobile_right {
+    right: 0;
+    left: unset;
+  }
+}
+
+@media (min-width: 577px) {
+  .info_block {
+    .close_popup {
+      display: none;
+    }
+  }
+
+  .icon_hover:hover .info_block {
+    display: block;
+    transition: all 3s ease-in;
+  }
 }
